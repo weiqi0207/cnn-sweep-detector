@@ -63,6 +63,16 @@ Apply the trained CNN model to new images:
 ```bash
 sbatch predict_ss.sl
 ```
+---
+
+### Confusion Matrix (Validation)
+
+![Confusion Matrix](confusion.png)
+
+Note: In the GHIST competition, the true labels for the final test set are not provided.  
+Therefore, we can only evaluate model performance on the validation split.  
+Here, 10% of the simulated data (`val_frac=0.1`) was held out as a validation set,  
+and the confusion matrix above reflects the model’s performance on that portion.
 
 ---
 
