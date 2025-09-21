@@ -1,0 +1,25 @@
+{
+  "mean": [
+    0.9008406066568568
+  ],
+  "std": [
+    0.2761920090051717
+  ],
+  "class_map": {
+    "NOSWEEP": 0,
+    "SWEEP": 1
+  },
+  "seed": 42,
+  "args": {
+    "root": "/work/users/w/a/wang0207/GHIST/Data Files and Submission Templates/ss_by_CNN/ms_png",
+    "val_frac": 0.1,
+    "epochs": 12,
+    "batch_size": 32,
+    "lr": 0.001,
+    "swa_start_frac": 0.7,
+    "swa_lr": 0.0005,
+    "num_workers": 8,
+    "seed": 42,
+    "resize": "50x512"
+  }
+}
