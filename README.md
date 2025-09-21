@@ -67,6 +67,8 @@ sbatch predict_ss.sl
 
 ### Confusion Matrix (Validation)
 
+**Accuracy:** 0.9879
+
 ![Confusion Matrix](confusion.png)
 
 Note: In the GHIST competition, the true labels for the final test set are not provided.  
