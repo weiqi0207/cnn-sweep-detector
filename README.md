@@ -6,7 +6,7 @@ The approach is partially inspired by *The Unreasonable Effectiveness of Convolu
 
 ---
 
-## 📋 Prerequisites
+## Prerequisites
 
 Before running the pipeline, make sure you have:
 
@@ -47,3 +47,33 @@ sbatch run_discoal_ms.sl
 ```
 
 ### 2. Convert Simulation to Images
+Turn `.ms` files into alignment images:
+```bash
+python ms_to_png_fixed.py --ms <file.ms> --outdir ms_png
+```
+
+### 3. Train CNN
+Train sweep vs. non-sweep classifier on the generated images:
+```bash
+sbatch run_cnn_train.sl
+```
+
+### 4. Prediction
+Apply the trained CNN model to new images:
+```bash
+sbatch predict_ss.sl
+```
+
+---
+
+## Limitations
+1. Currently supports single-sweep detection only.
+2. Workflow requires multiple manual steps instead of a single streamlined pipeline.
+
+---
+
+## Future Directions
+1. Compact Workflow: integrate simulation → image generation → CNN training → prediction into one script/workflow.
+2. Expand Sweep Types: extend to soft sweeps, partial sweeps, and background selection.
+
+---
