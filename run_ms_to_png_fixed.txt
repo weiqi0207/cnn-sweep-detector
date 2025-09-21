@@ -1,0 +1,7 @@
+for f in /work/users/w/a/wang0207/GHIST/Data\ Files\ and\ Submission\ Templates/ss_by_CNN/ms_out/*.ms; do
+    python ms_to_png_fixed.py \
+      --ms "$f" \
+      --outdir ms_png \
+      --width 512 \
+      --sort
+done

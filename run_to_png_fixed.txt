@@ -1,0 +1,6 @@
+python vcf_to_png_fixed.py \
+  --vcf GHIST_2025_singlesweep.21.testing.vcf.gz \
+  --outdir "/work/users/w/a/wang0207/GHIST/Data Files and Submission Templates/ss_by_CNN/vcf_png" \
+  --winsize 100000 \
+  --width 512 \
+  --sort

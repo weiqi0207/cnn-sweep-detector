@@ -1,0 +1,3 @@
+python vcf_windows_chr21_accessible.py \
+  --vcf GHIST_2025_singlesweep.21.testing.vcf.gz \
+  --out GHIST_2025_singlesweep.21.w100k.minimal.csv
